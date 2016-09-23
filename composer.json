@@ -1,0 +1,28 @@
+{
+    "name": "lorawan-team/delta_verification",
+    "description": "Verification for delta lorawan api",
+    "keywords": ["delta", "laravel"],
+    "license": "GLPV2",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lorawan-team/delta_service"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "5.3.*",
+        "lorawan-team/delta_service": "dev-master"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Delta\\DeltaVerification\\": "src/"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    }
+}
