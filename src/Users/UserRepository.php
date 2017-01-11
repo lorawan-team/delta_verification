@@ -1,9 +1,11 @@
 <?php namespace Delta\DeltaVerification\Users;
 
+use Delta\DeltaVerification\AbstractRepository;
 use Delta\DeltaVerification\Users\User;
 use Illuminate\Events\Dispatcher;
 
-class UserRepository implements UserRepositoryInterface
+
+class UserRepository extends AbstractRepository implements UserRepositoryInterface
 {
     protected $model = User::class;
 
@@ -21,7 +23,7 @@ class UserRepository implements UserRepositoryInterface
      * fund user by id
      *
      * @param  int $accountId
-     * @return User          
+     * @return User
      */
     public function findById($accountId)
     {
